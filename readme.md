@@ -18,9 +18,6 @@ Go [here](https://platform.openai.com/docs/quickstart) and follow the instructio
 ### clone vimai
 `git clone https://github.com/pa1ar/vimai.git`
 
-alternatively you can install it with pip
-`pip install vimai`
-
 ## Usage
 
 > Disclaimer: This is largely just a demo, which is powered by AI, so probably don't use it for anything important.
