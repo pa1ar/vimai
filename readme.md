@@ -2,6 +2,8 @@
 
 a Python tool that executes Vim commands based on natural language input, which are applied on target file.
 
+[![demo](https://i3.ytimg.com/vi/PjNn66o_-0g/hqdefault.jpg)](https://youtu.be/PjNn66o_-0g)
+
 ## Dependencies
 
 - OpenAI API
@@ -28,3 +30,6 @@ when you run the script for the first time, it will ask for API key, which will 
 2. provide instructions
 3. (your working directory is the directory where the script will look for files)
 
+### what else
+
+consider checking [Apple Shortcuts](https://1ar.io/tools) which i am using myself, maybe you will too. :3
