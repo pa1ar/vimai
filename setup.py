@@ -13,7 +13,7 @@ setup(
     author_email='p@1ar.io',
     url='https://github.com/pa1ar/vimai',
     install_requires=[
-        'openai', # Assuming 'openai_api' refers to the 'openai' package
+        'openai',
     ],
 )
 """

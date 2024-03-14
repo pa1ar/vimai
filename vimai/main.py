@@ -1,14 +1,16 @@
-import openai_api
+import openai
 import os
 import subprocess
 import json
 import glob
+import openai_api
 
 def main():
     while True:
         # Get user input
-        user_input = input("Enter your request: ")
-
+        print("current working directory:", os.getcwd())
+        user_input = input("enter your request: ")
+        
         # Updated system message
         system_message = "you are receiving natural language input and outputting a response in a dictionary format. The dictionary consists of two keys: 'vim_cmd' for the Vim command, and 'files' for the filenames or file patterns. Based on the user input, generate the appropriate response. For example, if the user says 'remove word 'test' from all .txt files', you would output something like '{\"vim_cmd\": \"<vim command in following format: vim -c 'command | update' -c 'qa'>\", \"files\": \".txt\"}'. Output only json, without markdown syntax. Generate a response to: "
         messages = [
@@ -31,7 +33,7 @@ def main():
 
         # Ask the user whether to apply the command
         decision = input("apply command? (Yes/No/Restart/Exit): ").strip().lower()
-        if decision == 'y':
+        if decision == 'y' or decision == 'yes':
             try:
                 matched_files = glob.glob(file_pattern)
                 print(f"matched files: {matched_files}")
