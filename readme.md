@@ -2,6 +2,7 @@
 
 a Python tool that executes Vim commands based on natural language input, which are applied on target file.
 
+## Demo
 [![demo](https://i3.ytimg.com/vi/PjNn66o_-0g/hqdefault.jpg)](https://youtu.be/PjNn66o_-0g)
 
 ## Dependencies
